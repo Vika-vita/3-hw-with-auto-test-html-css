@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-a {
+    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+body {
+    max-width: 1440px;
+    font-family: "Inter", sans-serif;
+    color: #303030;
+}
+
+header {
+    background-color: #2965F1;
+    padding: 23px 0;
+
+}
+
+header span {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    padding: 23px 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.main-section {
+    background-color: #fafaff;
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    max-width: 1440px;
+}
+
+.wrapper-a {
+     display: flex;
+     justify-content: center;
+     flex-wrap: nowrap;
+     align-items: center;
+     align-content: space-around;
+}
+
+.text-wrapper {
+    width: 425px;
+    height: 180px;}
+
+.main-title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 18px;
+    width: 425px;
+    height: 180px;
+}
+
+.main-image {
+    max-width: 715px;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.wrapper-b {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-start;
+    flex-direction: column;
+    padding: 100px 150px 60px 150px;
+}
+
+    .info-wrapper {
+
+}
+    .skills-wrapper {
+
+    }
+
+/* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+
+
+select {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    width: 150px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    appearance: none; 
+    background-image: url(./assets/ep_arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    margin: 0 0 60px;
+}
+
+select:hover  {
+    border-color: #2965f1;
+    background-color: #FFFFFF;
+}
+
+select:hover,
+.text-field:hover {
+    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+}
+
+
+.info-wrapper {
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+    align-content: space-around;
+
+
+    /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.frameworks {
+    max-width: 570px;
+}
+
+
+.books {
+    max-width: 570px;
+}
+
+.frameworks,
+.books {
+
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    flex-direction: column;
+
+    min-width: 50%;
+}
+
+
+
+.frameworks-list,
+.books-list {
+    gap: 146px;
+    /* 📍 Свойства flexbox для отступов между элементами в списках */
+}
+
+.frameworks-list {
+    font-weight: 400;
+    font-size: 16px;
+    list-style-image: url(./assets/solar_map-arrow-up-bold.svg);
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skills-block {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-direction: column-reverse;
+        align-content: space-evenly;
+    }
+    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: start;
+    flex-direction: column;
+    gap:20px;
+    /* 📍 Свойства flexbox для расположения элементов с классом .label */
+}
+
+.books-list {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+}
+
+form {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    gap: 10px;
+}
+
+.text-field {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    width: 125px;
+    height: 36px;
+    background-color: #0c4cf3;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 0.5em 1.5em;
+
+}
+.btn:hover {
+    background-color: #2965F1;
+}
+
+.line {
+    margin: 60px 0;
+}
+
+table {
+    border: 1px solid #95a1bb;
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 60px 420px 100px 420px;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+footer {
+    background-color: rgba(163, 167, 255, 0.3);
+    padding: 26px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2965f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
