@@ -48,16 +48,14 @@ header span {
 }
 
 .wrapper-a {
-     display: flex;
-     justify-content: center;
      flex-wrap: nowrap;
-     align-items: center;
      align-content: space-around;
 }
 
 .text-wrapper {
     max-width: 425px;
-    height: 180px;}
+    height: 180px;
+}
 
 .main-title {
     font-weight: 700;
@@ -83,17 +81,21 @@ header span {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
     align-content: center;
 }
 
-.wrapper-b {
+.wrapper {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-    padding: 100px 150px 60px 150px;
     gap: 60px;
+
+}
+
+.wrapper-b {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 100px 150px 60px 150px;
 }
 
 select {
